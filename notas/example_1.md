@@ -73,3 +73,5 @@ ReactDOM.render(
 
 Existe também uma quantidade muito grande de tags HTML que o react suporta, e
 podem ser vistas no site oficial: <https://facebook.github.io/react/docs/tags-and-attributes.html>
+
+-   [Voltar](../README.md)
