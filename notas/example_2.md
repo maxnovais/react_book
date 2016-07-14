@@ -1,6 +1,6 @@
 # 2 - JSX
 
-## O que é?
+## O que é
 
 JSX é uma extensão do Javascript para ser mais legível e compilado via
 transformadores. Lembrando que não é necessário seu uso do React.
@@ -17,9 +17,8 @@ não criaremos mais os elementos via `createElement()`, ao invés disso, criarem
 através de `<>`, assim, o código ficará mais legível, como podemos ver nas
 diferenças abaixo.
 
-### ES - Render Menu
-
 ```javascript
+// JS
 return React.createElement('div',
   null,
   menus.map(function(v,i){
@@ -29,11 +28,8 @@ return React.createElement('div',
     )
   })
 )
-```
 
-### JSX - Render Menu
-
-```javascript
+// JSX
 return (
   <div>
     {menus.map(function(v,i){
@@ -46,19 +42,15 @@ return (
 Eles criam exatamente os mesmos objetos, de maneira diferente. A mesma coisa
 ocorre na renderização dos links:
 
-### ES - Links
-
 ```javascript
+// JS
 return React.createElement('div',
   null,
   React.createElement('a', {href: url}, this.props.label),
   React.createElement('br')
 )
-```
 
-### JSX - Links
-
-```javascript
+// JSX
 return (
   <div>
     <a href={url}>{this.props.label}</a><br/>
