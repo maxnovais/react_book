@@ -1,4 +1,9 @@
+window.isLoggedIn = true
 var Menu = React.createClass({
+  getLoginLogout: function() {
+    if (window.isLoggedIn) return <a href='/logout'>Log out</a>
+    else return <a href='/login'>Log in</a>
+  },
   render: function(){
     var menus = ['Home',
       'About',
@@ -10,6 +15,8 @@ var Menu = React.createClass({
         {menus.map(function(v,i){
           return <div key={i}><Link label={v}/></div>
         })}
+        <div>Status: {window.isLoggedIn ? 'Logged in' : 'Logged out'}</div>
+        <div>{this.getLoginLogout()}</div>
       </div>
     )
 }})
