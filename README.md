@@ -13,3 +13,4 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 ## Notas
 
 -   [Exemplo 1](notas/example_1.md)
+-   [Exemplo 2](notas/example_2.md)
