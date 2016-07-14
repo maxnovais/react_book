@@ -1,4 +1,4 @@
-# 1.3 - First React Code
+# 1 - First React Code
 
 ```html
 <!DOCTYPE html>

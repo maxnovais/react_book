@@ -21,12 +21,11 @@ var Link = React.createClass({
         .toLowerCase()
         .trim()
         .replace(' ', '-')
-    return <div>
-      <a href={url}>
-      {this.props.label}
-      </a>
-      <br/>
-    </div>
+    return (
+      <div>
+        <a href={url}>{this.props.label}</a><br/>
+      </div>
+    )
   }
 })
 
