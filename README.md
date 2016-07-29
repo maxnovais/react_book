@@ -16,3 +16,4 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 -   [Nota 2.1](notas/note_2_1.md)
 -   [Nota 2.2](notas/note_2_2.md)
 -   [Nota 2.3](notas/note_2_3.md)
+-   [Nota 3.1](notas/note_3_1.md)

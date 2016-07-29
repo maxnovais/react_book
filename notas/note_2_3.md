@@ -27,13 +27,13 @@ colocar o `id` como `tooltip`.
 
 Inicializaremos o JSX com um objeto:
 
-```javascript
+```jsx
 var Tooltip = React.createClass({})
 ```
 
 Dentro dessa classe, iremos colocar as funções:
 
-```javascript
+```jsx
 var Tooltip = React.createClass({
   getInitialState: function() { ... }
   toggle: function() { ... }
@@ -48,7 +48,7 @@ cuidar da renderização dos objetos `Tooltip` na página.
 
 Abaixo, vou detalhar cada um deles:
 
-```javascript
+```jsx
 getInitialState: function() {
   return { opacity: false }
 },
@@ -57,7 +57,7 @@ getInitialState: function() {
 Aqui não tem nenhum segredo, coloca o estado inicial do objeto com opacidade em
 `false`
 
-```javascript
+```jsx
 toggle: function() {
   var tooltipNode = ReactDOM.findDOMNode(this)
   this.setState({
@@ -74,7 +74,7 @@ mesmo. Depois só mudamos sua seu status com `.setState()`, colocando a opacidad
 ao contrário do que estava inicialmente, já as propriedades `top` e `left` vem
 do próprio objeto manipulado.
 
-```javascript
+```jsx
 render: function() {
     var style = {
       zIndex: (this.state.opacity) ? 1000 : -1000,
@@ -113,7 +113,7 @@ além do `children`, e ficaria mais ou menos assim:
 
 Como já expliquei no próximo passo, para renderizar, o código é esse abaixo:
 
-```javascript
+```jsx
 ReactDOM.render(<div>
   <Tooltip text="Master Express.js-The Node.js Framework For Your Web Development">Pro Express.js</Tooltip> was published in 2014. It was one of the first books on v4.x. And it was my second book published with Apress
     after <Tooltip text="Practical Node.js: Building Real-World Scalable Web Apps">Practical Node.js</Tooltip>.
@@ -125,7 +125,7 @@ ReactDOM.render(<div>
 
 O código completo do JSX é:
 
-```javascript
+```jsx
 var Tooltip = React.createClass({
   getInitialState: function() {
     return {

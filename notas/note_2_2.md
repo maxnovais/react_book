@@ -4,7 +4,7 @@
 
 As condicionais seguem os mesmos padrões do Javascript comum:
 
-```javascript
+```jsx
 (condição) ? verdadeiro : falso
 `if (condição) verdadeiro else falso
 `if (condição) { verdadeiro } else { falso }
@@ -13,7 +13,7 @@ As condicionais seguem os mesmos padrões do Javascript comum:
 Vamos fazer com que condicionalmente mostre se o usuário precisa ou não logar ou
 deslogar.
 
-```javascript
+```jsx
 // Primeiro formato
 <div>Status: {window.isLoggedIn ? 'Logged in' : 'Logged out'}</div>
 
@@ -36,7 +36,7 @@ Usaremos, nesse projeto o primeiro e o segundo formato, segue o código completo
 
 ## script.jsx
 
-```javascript
+```jsx
 window.isLoggedIn = true
 var Menu = React.createClass({
   getLoginLogout: function() {
