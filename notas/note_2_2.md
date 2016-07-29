@@ -1,4 +1,4 @@
-[Home](../README.md) | [Nota Anterior](note_2_1.md) | Próxima Nota
+[Home](../README.md) | [Nota Anterior](note_2_1.md) | [Próxima Nota](note_2_3.md)
 
 # Condicionais em JSX
 
