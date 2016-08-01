@@ -1,6 +1,6 @@
-[Home](../README.md) | [Nota Anterior](note_2_3.md) | [Próxima Nota]()
+[Home](../README.md) | [Nota Anterior](note_2_3.md) | [Próxima Nota](note_3_2.md)
 
-# Propriedades do React
+# Propriedades
 
 Vamos partir de um `ìndex.html` comum como abaixo:
 

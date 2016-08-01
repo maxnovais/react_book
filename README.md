@@ -12,8 +12,18 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 
 ## Notas
 
--   [Nota 1](notas/note_1.md)
--   [Nota 2.1](notas/note_2_1.md)
--   [Nota 2.2](notas/note_2_2.md)
--   [Nota 2.3](notas/note_2_3.md)
--   [Nota 3.1](notas/note_3_1.md)
+### Capitulo 1
+
+-   [Nota 1 - Primeiro código de React](notas/note_1.md)
+
+
+### Capitulo 2
+
+-   [Nota 2.1 - Introdução ao JSX](notas/note_2_1.md)
+-   [Nota 2.2 - Condicionais em JSX](notas/note_2_2.md)
+-   [Nota 2.3 - Projeto Tooltip](notas/note_2_3.md)
+
+### Capitulo 3
+
+-   [Nota 3.1 - Propriedades](notas/note_3_1.md)
+-   [Nota 3.2 - Estados](notas/note_3_2.md)

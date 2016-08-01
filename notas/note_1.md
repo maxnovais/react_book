@@ -1,6 +1,6 @@
 [Home](../README.md) | Nota Anterior | [Próxima Nota](note_2_1.md)
 
-# 1 - First React Code
+# 1 - Primeiro código de React
 
 ```html
 <!DOCTYPE html>
