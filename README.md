@@ -27,3 +27,4 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 
 -   [Nota 3.1 - Propriedades](notas/note_3_1.md)
 -   [Nota 3.2 - Estados](notas/note_3_2.md)
+-   [Nota 3.3 - Métodos](notas/note_3_3.md)
