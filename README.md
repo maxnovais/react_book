@@ -16,7 +16,6 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 
 -   [Nota 1 - Primeiro código de React](notas/note_1.md)
 
-
 ### Capitulo 2
 
 -   [Nota 2.1 - Introdução ao JSX](notas/note_2_1.md)
@@ -28,3 +27,4 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 -   [Nota 3.1 - Propriedades](notas/note_3_1.md)
 -   [Nota 3.2 - Estados](notas/note_3_2.md)
 -   [Nota 3.3 - Métodos](notas/note_3_3.md)
+-   [Nota 3.4 - Eventos](notas/note_3_4.md)
