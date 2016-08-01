@@ -1,9 +1,29 @@
-# Testes de React
+# React Annotations
 
-Aqui estarão anotações sobre um determinado livro de react. Provavelmente que
-boa parte do que há aqui irá ser convertido em anotações para o blog.
+## Apresentação
 
-## How to
+Bom, como sabemos, React é um dos componentes de interface mais legais que
+existe atualmente, ele trata o que chamamos de virtual DOM. Virtual DOM nada
+mais é do que DOM processado na memória (Ah legal, e o que isso muda?).
+A idéia de processamento e geração de DOM através da memória, garante que além
+de performático, ele traga benefícios bacanas de integração Front-End/Back-End e
+veremos isso na prática. :D
+
+Sem muitas delongas, nas minhas anotações, vou colocar o código completo do
+HTML usado sempre no ínicio do artigo e no final dele o código do Javascript.
+Outra coisa, muito dos códigos aqui é feito em JSX que precisa do compilador ou
+interpretador Babel (mais tarde vou explicar essa parte, não precisa googlar).
+
+Só algumas coisas rápidas, essa anotações são baseadas:
+
+-   No livro [React Quickly](https://www.manning.com/books/react-quickly)
+-   Na [documentação](https://facebook.github.io/react/docs/getting-started.html)
+
+Se quiserem dar uma lida, e aproveitar e comprar o livro, aproveitem. :)
+
+## Abrindo os exemplos
+Todos os códigos de exemplo usados aqui podem ser iniciados através do manual
+abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal.
 
 -   Clone o projeto.
 -   Rode o `$ npm install`
@@ -14,7 +34,7 @@ boa parte do que há aqui irá ser convertido em anotações para o blog.
 
 ### Capitulo 1
 
--   [Nota 1 - Primeiro código de React](notas/note_1.md)
+-   [Nota 1 - Primeiro Contato](notas/note_1.md)
 
 ### Capitulo 2
 

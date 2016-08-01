@@ -1,29 +1,43 @@
 [Home](../README.md) | Nota Anterior | [Próxima Nota](note_2_1.md)
 
-# 1 - Primeiro código de React
+# 1 - Hello Word
+
+Bom, o react pode ser conseguido de diversas maneiras, tanto pelo NPM, quanto
+por repositórios de CDN, eu vou preferir usar um repositório de CDN para
+garantir a simplicidade daqui, e isso tem suas desvantagens, pois o código da
+lib **React** não será armazenada localmente, e precisará de internet.
+
+Eu preferi usar o [CDNjs](https://cdnjs.com/libraries/react) pra isso, mas
+também podemos usar outras fontes, agora vamos criar nossa primeira página:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://fb.me/react-0.14.2.js"></script>
-    <script src="https://fb.me/react-dom-0.14.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react-dom.js"></script>
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/javascript">
-      ReactDOM.render(
-        React.createElement('h1', null, 'Hello world!'),
-        document.getElementById('example')
-      )
-    </script>
   </body>
 </html>
 ```
 
+Isso é uma página padrão, sem nenhum conteúdo, até que acidentalmente
+adicionamos o código na mistura:
+
+```html
+<script type="text/javascript">
+  ReactDOM.render(
+    React.createElement('h1', null, 'Hello world!'),
+    document.getElementById('example')
+  )
+</script>
+```
+
 O código acima resulta na criação do elemento `<h1>` sem nenhum parâmetro com o
-valor de `Hello Word!`.
-Podemos escrever de outras formas também, com variável, por exemplo.
+valor de `Hello Word!` dentro do componente chamado `example`. Nisso, podemos
+ver algumas coisas legais e ser implementada de outras formas, como a abaixo:
 
 ```javascript
 var h1 = React.createElement('h1', null, 'Hello world!')
@@ -33,8 +47,8 @@ ReactDOM.render(
 );
 ```
 
-É importante que o método `ReactDOM.render()` só pode ter apenas um elemento por
-vez, no caso acima, o `h1`.
+Vale observar a importância de que o método `ReactDOM.render()` tenha apenas um
+elemento por vez, e no caso acima, o `h1`.
 Caso precise renderizar mais de uma vez o mesmo elemento no mesmo level (dois
 elementos `h1`), colocaremos em um div, conforme abaixo:
 
@@ -46,7 +60,7 @@ ReactDOM.render(
 );
 ```
 
-Podemos instanciar os elementos também como classes isoladas, que nem no exemplo
+Podemos instanciar os elementos também como classes isoladas, como no exemplo
 abaixo:
 
 ```javascript
@@ -74,4 +88,4 @@ ReactDOM.render(
 ```
 
 Existe também uma quantidade muito grande de tags HTML que o react suporta, e
-podem ser vistas no site oficial: <https://facebook.github.io/react/docs/tags-and-attributes.html>
+podem ser vistas no [site oficial](https://facebook.github.io/react/docs/tags-and-attributes.html).
