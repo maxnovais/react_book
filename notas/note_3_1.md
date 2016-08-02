@@ -2,7 +2,8 @@
 
 # Propriedades
 
-Vamos partir de um `ìndex.html` comum como abaixo:
+Como falamos no [Projeto Tooltip](note_2_3.md), aqui vamos falar um pouco das
+propriedades dos objetos, primeiramente vamos criar o nosso HTML.
 
 ```html
 <!DOCTYPE html>
@@ -14,20 +15,15 @@ Vamos partir de um `ìndex.html` comum como abaixo:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
   </head>
   <body class="container">
+    <div id="book"></div>
     <div id="content"></div>
     <script src="script.jsx" type="text/babel"></script>
   </body>
 </html>
 ```
 
-No JSX vamos criar alguns objetos:
-
-```jsx
-var Book = React.createClass( { ... })
-var Content = React.createClass( { ... })
-```
-
-Primeiro vamos descrever algumas propriedades do objeto book:
+No JSX vamos criar dois objetos, um chamado `Book` e outro chamado `Content` e
+vamos descrever algumas propriedades do objeto book:
 
 ```jsx
 var Book = React.createClass({
@@ -38,7 +34,8 @@ var Book = React.createClass({
 ```
 
 Definimos aqui que o livro é uma classe de React com três propriedades: `title`,
-`publisher` e `year`. Vamos definir mais uma propriedade dentro dele:
+`publisher` e `year`. Vamos definir o método `render` dentro dele que irá
+retornar formatada as propriedades:
 
 ```jsx
 render: function(){
@@ -50,9 +47,9 @@ render: function(){
 }
 ```
 
-Essa propriedade e usada no React para renderização, vamos fazer o objeto `Book`
-retornar as propriedades préviamente cadastradas, o objeto deve ficar parecido
-com esse abaixo
+O método `render` é usado no React para renderização, fizemos o objeto `Book`
+retornar as propriedades do objeto referenciando as propriedades ou métodos do
+objeto usando o `this` do Javascript. O objeto `Book` ficará dessa forma:
 
 ```jsx
 var Book = React.createClass({
@@ -71,7 +68,8 @@ var Book = React.createClass({
 
 O outro objeto `Content`, vamos fazer uma representação diferente, usando a
 função `getInitialState` do React, que irá inicializar o objeto com aquelas
-propriedades.
+propriedades. Falaremos mais tarde também de estados, então não precisa se
+preocupar, por enquanto.
 
 ```jsx
 var Content = React.createClass({
@@ -84,12 +82,20 @@ var Content = React.createClass({
 })
 ```
 
-O processo de criação é bem diferente, mas o resultado é o mesmo. Por fim, vamos
-renderizar o objeto `Book` no html com o código abaixo:
+Apesar do processo de criação é diferente, o resultado é o mesmo, a única
+diferença é que referenciamos o valor através de uma propriedade de estado ao
+invés de uma propriedade direto do objeto usando `this.state.<propriedade>`.
+
+Por fim, vamos renderizar o objeto `Book` e o `Content` com o código abaixo:
 
 ```jsx
 ReactDOM.render(
   <Book />,
+  document.getElementById('book')
+);
+
+ReactDOM.render(
+  <Content />,
   document.getElementById('content')
 );
 ```
@@ -123,6 +129,11 @@ var Content = React.createClass({
 
 ReactDOM.render(
   <Book />,
+  document.getElementById('book')
+);
+
+ReactDOM.render(
+  <Content />,
   document.getElementById('content')
 );
 ```

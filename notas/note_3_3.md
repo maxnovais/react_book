@@ -5,7 +5,7 @@
 Simples nota para manter a ordem, mas é um pouco mais do que está descriminado
 nas notas anteriores, de como usar um método.
 
-O HTML vai ser o de sempre:
+O HTML vai ser, basicamente, o de sempre:
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ getUrl: function(){
 },
 ```
 
-Já o `render` vai ter a obrigação de renderizar o método, observe:
+O método será chamado no `render` para retornar o valor.
 
 ```jsx
 render: function() {
@@ -52,7 +52,7 @@ render: function() {
 }
 ```
 
-Nada de novo aqui, é apenas para fixar, segue o JSX completo:
+Nada de novo aqui, é apenas para fixar o uso de métodos, segue o JSX completo:
 
 ```jsx
 var Content = React.createClass({

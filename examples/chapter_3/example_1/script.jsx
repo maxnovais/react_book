@@ -24,5 +24,10 @@ var Content = React.createClass({
 
 ReactDOM.render(
   <Book />,
+  document.getElementById('book')
+);
+
+ReactDOM.render(
+  <Content />,
   document.getElementById('content')
 );

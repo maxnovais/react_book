@@ -24,13 +24,13 @@ até a versão 0.14.:
 -   onMouseOver
 -   onMouseUp
 
-Uma coisa bacana do React, é que ele é declarativo, não imperativo, isso quer
-dizer que não precisamos anexar a função no evento, e sim declarar e chamá-la
-no evento, isso quer dizer, que podemos chamar nossa função por qualquer nome,
-nesse caso, será considerada a chamada do método.
+Uma coisa interessante do React, é que ele é declarativo, não imperativo, isso
+quer dizer que não precisamos anexar a função no evento, e sim declarar e
+chamá-la no evento, em outras palavras, podemos nomear nossa função com qualquer
+nome e fazer apenas a chamada do método.
 
-Bom, vamos aos códigos, primeiro o HTML clássico, adicionei um CSS pra ficar
-mais apresentável.
+Bom, vamos aos códigos, primeiro o HTML, adicionei um CSS já conhecido para
+ficar mais apresentável.
 
 ```html
 <!DOCTYPE html>

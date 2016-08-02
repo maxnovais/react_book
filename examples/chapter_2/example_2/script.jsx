@@ -5,11 +5,7 @@ var Menu = React.createClass({
     else return <a href='/login'>Log in</a>
   },
   render: function(){
-    var menus = ['Home',
-      'About',
-      'Services',
-      'Portfolio',
-      'Contact us']
+    var menus = ['Home', 'About', 'Services', 'Portfolio', 'Contact us']
     return (
       <div>
         {menus.map(function(v,i){
@@ -19,20 +15,13 @@ var Menu = React.createClass({
         <div>{this.getLoginLogout()}</div>
       </div>
     )
-}})
+  }
+})
 
 var Link = React.createClass({
   render: function () {
-    var url='/'
-      + this.props.label
-        .toLowerCase()
-        .trim()
-        .replace(' ', '-')
-    return (
-      <div>
-        <a href={url}>{this.props.label}</a><br/>
-      </div>
-    )
+    var url='/' + this.props.label.toLowerCase().trim().replace(' ', '-')
+    return (<div><a href={url}>{this.props.label}</a><br/></div>)
   }
 })
 

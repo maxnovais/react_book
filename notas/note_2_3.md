@@ -2,7 +2,8 @@
 
 # Projeto Tooltip
 
-Alguns macetes de UX, demonstrando alguns componentes. Vamos criar um index:
+Nessa anotação, vamos fazer um pequeno projeto de front-end usando algumas
+ferramentas legais junto com o React. Primeiro, vamos criar no HTML.
 
 ```html
 <!DOCTYPE html>
@@ -22,16 +23,10 @@ Alguns macetes de UX, demonstrando alguns componentes. Vamos criar um index:
   </html>
 ```
 
-Como sugestão, usamos o tema de bootswatch chamado de `Flatly` e o `div` vamos
-colocar o `id` como `tooltip`.
-
-Inicializaremos o JSX com um objeto:
-
-```jsx
-var Tooltip = React.createClass({})
-```
-
-Dentro dessa classe, iremos colocar as funções:
+Como sugestão, usamos o tema de [Bootswatch](https://bootswatch.com/) chamado
+[Flatly](https://bootswatch.com/flatly/), e criaremos um div com o id de
+`tooltip`. Inicializaremos o JSX com um objeto e colocaremos alguns métodos
+dentro:
 
 ```jsx
 var Tooltip = React.createClass({
@@ -46,7 +41,7 @@ seja `0` - invísivel. O `toggle` faz o papel de alterar o estado de `false` par
 `true`, sendo assim, retorna `1` - visível. Por fim, temos o 'render' que irá
 cuidar da renderização dos objetos `Tooltip` na página.
 
-Abaixo, vou detalhar cada um deles:
+Vamos detalhar cada um deles.
 
 ```jsx
 getInitialState: function() {
@@ -55,7 +50,7 @@ getInitialState: function() {
 ```
 
 Aqui não tem nenhum segredo, coloca o estado inicial do objeto com opacidade em
-`false`
+`false`.
 
 ```jsx
 toggle: function() {
@@ -69,10 +64,13 @@ toggle: function() {
 ```
 
 Aqui é onde a mágica acontece, inicialmente buscamos o DOM a ser manipulado com
-a função `findDOMNode()`, como o parametro de busca é o `this`, ele retorna ele
-mesmo. Depois só mudamos sua seu status com `.setState()`, colocando a opacidade
-ao contrário do que estava inicialmente, já as propriedades `top` e `left` vem
-do próprio objeto manipulado.
+a função `ReactDOM.findDOMNode()`, como o parametro de busca é o `this`, ele
+retorna o próprio objeto de HTML. Depois só mudamos sua seu status com
+`.setState()` colocando a opacidade ao contrário do que estava inicialmente,
+já as propriedades `top` e `left` vem do próprio objeto manipulado.
+
+Vamos falar mais tarde sobre `.setState()`, então, por enquanto não precisa se
+preocupar sobre isso.
 
 ```jsx
 render: function() {
@@ -111,7 +109,8 @@ chamada, sendo assim, a criação de um objeto desse, precisa do parâmetro `tex
 além do `children`, e ficaria mais ou menos assim:
 `<Tooltip text="Hint">Example</Tooltip>`.
 
-Como já expliquei no próximo passo, para renderizar, o código é esse abaixo:
+Também não vamos adentrar nos eventos, falaremos sobre isso mais tarde também.
+O último passo é renderizar com o código abaixo:
 
 ```jsx
 ReactDOM.render(<div>
@@ -123,7 +122,7 @@ ReactDOM.render(<div>
   document.getElementById('tooltip'))
 ```
 
-O código completo do JSX é:
+O código completo do JSX será:
 
 ```jsx
 var Tooltip = React.createClass({

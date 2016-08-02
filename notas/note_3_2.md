@@ -2,19 +2,18 @@
 
 # Estados
 
-O estado do objeto pode ser passado no array de criação do objeto. Um exemplo
-simples seria o abaixo:
+O React trabalha bastante com estado de objetos, para exemplificar, vamos fazer
+um objeto que tenha meu nome e quais animais eu gosto em um array. Vamos definir
+que esse é o estado inicial, já que posso gostar de mais animais conforme o
+tempo, ou até mesmo, passar a não gostar de outros. Sendo assim, vamos criar o
+objeto abaixo:
 
 ```jsx
-var Content = React.createClass({
+var Me = React.createClass({
   getInitialState: function(){
     return {
-      Name: 'max',
-      Animals: [
-        'cat',
-        'dog',
-        'fish'
-      ]
+      Name: 'Max',
+      Animals: ['cat', 'dog','fish']
     }
   }
 })
@@ -22,11 +21,10 @@ var Content = React.createClass({
 
 Aqui temos um objeto que na primeira chamada ele coloca o estado inicial com o
 que está declarado dentro do método `getInitialState`. O estado pode ser
-alterado a qualquer momento com o método `setState`. Nos passos abaixo, iremos
-fazer uma pequena aplicação que atualiza o estado a cada 800 milisegundos e
-atualiza na visualização também.
+alterado a qualquer momento com o método `setState`.
 
-Vamos, inicialmente, criar o HTML.
+Nos passos abaixo, iremos fazer uma pequena aplicação que atualiza o estado a
+cada 800 milisegundos e renderiza na página. Vamos criar o HTML primeiro.
 
 ```html
 <!DOCTYPE html>
@@ -44,24 +42,16 @@ Vamos, inicialmente, criar o HTML.
 </html>
 ```
 
-Vamos criar o objeto:
-
-```jsx
-var Content = React.createClass({ . . . })
-```
-
-Dentro desse objeto, teremos dois métodos iniciais, o `getInitialState` e o
-`render`.
+Vamos criar um objeto `Content` com dois métodos, `getInitialState` e `render`:
 
 ```jsx
 var Content = React.createClass({
-  getInitialState: function(){},
-  render: function(){}
+  getInitialState: function(){ . . . },
+  render: function(){ . . . }
 })
 ```
 
-O `getInitialState` é onde irá acontecer toda mágica instanciando a `this` e
-usando a função `setInterval`, faremos com que o número mude randomicamente.
+Vamos detalhar abaixo o que cada método irá fazer.
 
 ```jsx
 getInitialState: function(){
@@ -73,15 +63,15 @@ getInitialState: function(){
 },
 ```
 
-**Observe** que atribuimos uma variavel `_this` com o valor do objeto (`this`),
-isso ocorre, pois em determinados momentos, chamar o `this` dentro de uma função
-você pode estar se referindo direto a função, e não ao objeto, então, sempre
-atribuímos a uma variável antes de adentrar a uma função.
+Observe que atribuimos uma variavel `_this` com o valor do objeto (`this`),
+isso ocorre, pois em determinados momentos, chamar o `this` dentro de um método
+você pode estar se referindo ao método, e não ao objeto, então, é bom  
+atribuirmos a uma variável antes de adentrar no método.
 
 Com o valor referenciado, determinamos a função `setInterval` ser chamada a
 cada 800 milisegundos, e nessa chamada chamamos o método do objeto `setState`
-passando no dicionário a chave `hash` e o valor randômico da função
-`Math.random()`, por fim, retornamos o valor inicial da função.
+passando no objeto a `hash` e atribuindo o valor randômico da função
+`Math.random()`. Por fim, retornamos o valor inicial, que será 0.
 
 Basicamente, essa expressão irá trazer o valor zero de ínicio e depois a cada
 800 milisegundos atualizará o número por um valor randômico. Na outra função, o
