@@ -98,7 +98,11 @@ Primeiro vamos iniciar com nosso html comum:
 </html>
 ```
 
-Até aqui nenhuma novidade, abaixo segue o JSX.
+Colocaremos o `type="text/babel"`, dizendo quem é que irá processar o arquivo ao
+invés de não passar o atributo, essa é a única diferença ao chamar um Javascript
+comum a um JSX.
+
+Abaixo segue um script de JSX e em breve vamos detalhar melhor ele:
 
 ```jsx
 var Menu = React.createClass({

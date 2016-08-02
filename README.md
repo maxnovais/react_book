@@ -19,7 +19,7 @@ Só algumas coisas rápidas, essa anotações são baseadas:
 -   No livro [React Quickly](https://www.manning.com/books/react-quickly)
 -   Na [documentação](https://facebook.github.io/react/docs/getting-started.html)
 
-Se quiserem dar uma lida, e aproveitar e comprar o livro, aproveitem. :)
+Se quiserem dar uma lida, aproveitem, e comprem o livro. :)
 
 ## Abrindo os exemplos
 Todos os códigos de exemplo usados aqui podem ser iniciados através do manual
