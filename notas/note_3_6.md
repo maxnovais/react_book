@@ -1,4 +1,4 @@
-[Home](../README.md) | [Nota Anterior](note_3_5.md) | [Próxima Nota]()
+[Home](../README.md) | [Nota Anterior](note_3_5.md) | [Próxima Nota](note_3_7.md)
 
 # Parent
 
