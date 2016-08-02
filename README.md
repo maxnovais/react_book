@@ -34,12 +34,12 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 
 ### Capitulo 1
 
--   [Nota 1 - Primeiro Contato](notas/note_1.md)
+-   [Nota 1 - Hello Word](notas/note_1.md)
 
 ### Capitulo 2
 
--   [Nota 2.1 - Introdução ao JSX](notas/note_2_1.md)
--   [Nota 2.2 - Condicionais em JSX](notas/note_2_2.md)
+-   [Nota 2.1 - JSX](notas/note_2_1.md)
+-   [Nota 2.2 - Condicionais](notas/note_2_2.md)
 -   [Nota 2.3 - Projeto Tooltip](notas/note_2_3.md)
 
 ### Capitulo 3
@@ -48,3 +48,4 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 3.2 - Estados](notas/note_3_2.md)
 -   [Nota 3.3 - Métodos](notas/note_3_3.md)
 -   [Nota 3.4 - Eventos](notas/note_3_4.md)
+-   [Nota 3.5 - Manipuladores](notas/note_3_5.md)
