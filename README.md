@@ -49,3 +49,4 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 3.3 - Métodos](notas/note_3_3.md)
 -   [Nota 3.4 - Eventos](notas/note_3_4.md)
 -   [Nota 3.5 - Manipuladores](notas/note_3_5.md)
+-   [Nota 3.6 - Parent](notas/note_3_6.md)

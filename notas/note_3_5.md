@@ -1,4 +1,4 @@
-[Home](../README.md) | [Nota Anterior](note_3_4.md) | [Próxima Nota]()
+[Home](../README.md) | [Nota Anterior](note_3_4.md) | [Próxima Nota](note_3_6.md)
 
 # Manipuladores
 
@@ -89,7 +89,7 @@ retiramos a lógivca do componente e colocamos em um componente pai.
 ```jsx
 var ClickCounterButton = React.createClass({
   render: function() {
-    return <button onClick={this.props.handler}>
+    return <button className="btn btn-primary" onClick={this.props.handler}>
       Don't click me {this.props.counter} times!
     </button>
   }
