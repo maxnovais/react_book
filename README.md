@@ -16,8 +16,8 @@ interpretador Babel (mais tarde vou explicar essa parte, não precisa googlar).
 
 Só algumas coisas rápidas, essa anotações são baseadas:
 
--   No livro [React Quickly](https://www.manning.com/books/react-quickly)
--   Na [documentação](https://facebook.github.io/react/docs/getting-started.html)
+-   No livro [React Quickly][0]
+-   Na [documentação][1]
 
 Se quiserem dar uma lida, aproveitem, e comprem o livro. :)
 
@@ -51,3 +51,6 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 3.5 - Manipuladores](notas/note_3_5.md)
 -   [Nota 3.6 - Parent](notas/note_3_6.md)
 -   [Nota 3.7 - Projeto Timer](notas/note_3_7.md)
+
+[0]:https://www.manning.com/books/react-quickly
+[1]:https://facebook.github.io/react/docs/getting-started.html
