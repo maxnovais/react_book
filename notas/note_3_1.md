@@ -1,4 +1,4 @@
-[Home](../README.md) | [Nota Anterior](note_2_3.md) | [Próxima Nota](note_3_2.md)
+[Home](../README.md) | [Nota Anterior](note_2_4.md) | [Próxima Nota](note_3_2.md)
 
 # Propriedades
 

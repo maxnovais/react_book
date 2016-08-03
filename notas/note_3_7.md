@@ -105,16 +105,19 @@ Aqui fica toda a lógica do processo, inicializamos o objeto com as propriedades
 de estado `time` e `int` iguais a nulo e definimos um handler chamado
 `startTimer`, esse recebendo um valor de `time`.
 
--   Primeira coisa que ele vai fazer é limpar o intervalo do estado de `int` no
+Primeira coisa que ele vai fazer é limpar o intervalo do estado de `int` no
 comando `clearInterval(this.state.int)`, isso é importante, pois se acionarmos
-novamente o botão, ele não deve continuar o estado anterior.
--   Em seguida ele coloca o objeto dento da variável em `var _this = this`
--   Definimos `int` uma função `setInterval` que será executada em 1000 ms.
--   Dentro do `setInterval`:
-  -  Subtraí o tempo com `var tl = _this.state.time - 1`
-  -  Se `tl` for igual a `0`, ele interrompe o intervalo
-  -  Por fim ele seta o estado de time com `.setState({time: tl})`
-- No fim da função ele retorna colocando o estado de `time` e `int`
+novamente o botão, ele não deve continuar o estado anterior, em seguida salvamos
+o contexto do objeto `var _this = this` e definimos `int` uma função
+`setInterval` que será executada em 1000 ms. Dentro do `setInterval`:
+
+-   A variável `tl` significa *time left*
+-   Subtraí o tempo com `var tl = _this.state.time - 1`
+-   Se `tl` for igual a `0`, ele interrompe o intervalo
+-   Por fim ele seta o estado de time com `.setState({time: tl})`
+
+No fim da função ele retorna colocando o estado de `time` e `int` criando o
+loop finito.
 
 Os comandos [setInterval][0] e [clearInterval][1] não são do React, e podem
 ser vistos na documentação oficial da [Mozilla][3]

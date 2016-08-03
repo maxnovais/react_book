@@ -1,4 +1,4 @@
-[Home](../README.md) | [Nota Anterior](note_2_2.md) | [Próxima Nota](note_3_1.md)
+[Home](../README.md) | [Nota Anterior](note_2_2.md) | [Próxima Nota](note_2_4.md)
 
 # Projeto Tooltip
 

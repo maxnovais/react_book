@@ -22,6 +22,7 @@ Só algumas coisas rápidas, essa anotações são baseadas:
 Se quiserem dar uma lida, aproveitem, e comprem o livro. :)
 
 ## Abrindo os exemplos
+
 Todos os códigos de exemplo usados aqui podem ser iniciados através do manual
 abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal.
 
@@ -41,6 +42,7 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 2.1 - JSX](notas/note_2_1.md)
 -   [Nota 2.2 - Condicionais](notas/note_2_2.md)
 -   [Nota 2.3 - Projeto Tooltip](notas/note_2_3.md)
+-   [Nota 2.4 - Compilando JSX](notas/note_2_4.md)
 
 ### Capitulo 3
 
