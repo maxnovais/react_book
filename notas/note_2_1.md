@@ -11,9 +11,9 @@ facilidade de compreensão, vamos utilizar esse formato nos tutoriais.
 -   Não tem uma curva de aprendizado alta.
 
 Há um fato relevante aqui, o JSX é transformado em JS comum através de dois
-meios, um deles é compilar localmente o JSX através do [Babel via Node](https://www.npmjs.com/package/babel)
+meios, um deles é compilar localmente o JSX através do [Babel via Node][0]
 e a outra forma é fazer com que o browser transforme isso localmente através
-da lib [Babel Core](https://cdnjs.com/libraries/babel-core/).
+da lib [Babel Core][1].
 
  Para nossas aplicações, e para diminuir a complexidade delas,  por enquanto,
  não vamos compilar nenhum JS, isso não quer dizer que não precisamos fazer isso
@@ -176,3 +176,6 @@ menu e retornamos o objeto com o método de array `.map()` com uma função que
 retorna um `div` com a chamada do objeto `link` passando o `label`, ou seja, o
 método `.map()` irá passar em todos os itens do array e criará o menu
 dinamicamente.
+
+[0]:https://www.npmjs.com/package/babel
+[1]:https://cdnjs.com/libraries/babel-core/

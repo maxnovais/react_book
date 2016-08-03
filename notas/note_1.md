@@ -7,8 +7,8 @@ por repositórios de CDN, eu vou preferir usar um repositório de CDN para
 garantir a simplicidade daqui, e isso tem suas desvantagens, pois o código da
 lib **React** não será armazenada localmente, e precisará de internet.
 
-Eu preferi usar o [CDNjs](https://cdnjs.com/libraries/react) pra isso, mas
-também podemos usar outras fontes, agora vamos criar nossa primeira página:
+Eu preferi usar o [CDNjs][0] pra isso, mas também podemos usar outras fontes,
+agora vamos criar nossa primeira página:
 
 ```html
 <!DOCTYPE html>
@@ -88,4 +88,7 @@ ReactDOM.render(
 ```
 
 Existe também uma quantidade vasta de tags HTML que o react suporta, e podem ser
- vistas no [site oficial](https://facebook.github.io/react/docs/tags-and-attributes.html).
+ vistas no [site oficial][1].
+
+[0]:https://cdnjs.com/libraries/react
+[1]:https://facebook.github.io/react/docs/tags-and-attributes.html

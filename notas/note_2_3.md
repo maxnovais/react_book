@@ -23,10 +23,9 @@ ferramentas legais junto com o React. Primeiro, vamos criar no HTML.
   </html>
 ```
 
-Como sugestão, usamos o tema de [Bootswatch](https://bootswatch.com/) chamado
-[Flatly](https://bootswatch.com/flatly/), e criaremos um div com o id de
-`tooltip`. Inicializaremos o JSX com um objeto e colocaremos alguns métodos
-dentro:
+Como sugestão, usamos o tema de [Bootswatch][0] chamado [Flatly][1], e criaremos
+um div com o id de `tooltip`. Inicializaremos o JSX com um objeto e colocaremos
+alguns métodos dentro:
 
 ```jsx
 var Tooltip = React.createClass({
@@ -172,3 +171,6 @@ ReactDOM.render(<div>
   </div>,
   document.getElementById('tooltip'))
 ```
+
+[0]:https://bootswatch.com/
+[1]:https://bootswatch.com/flatly/

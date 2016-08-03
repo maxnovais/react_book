@@ -106,8 +106,19 @@ de estado `time` e `int` iguais a nulo e definimos um manipulador chamado
 `startTimer`, esse recebendo um valor de `time`.
 
 -   Primeira coisa que ele vai fazer é limpar o intervalo do estado de `int` no
-comando `clearInterval(this.state.int)`
+comando `clearInterval(this.state.int)`, isso é importante, pois se acionarmos
+novamente o botão, ele não deve continuar o estado anterior.
 -   Em seguida ele coloca o objeto dento da variável em `var _this = this`
--   Ele define o intervalo e subtraí o tempo `var tl = _this.state.time - 1`
--   Se `tl` for igual a `0`, ele simplesmente limpa o intervalo
--   Senão ele define o estado do objeto 
+-   Definimos `int` uma função `setInterval` que será executada em 1000 ms.
+-   Dentro do `setInterval`:
+  -  Subtraí o tempo com `var tl = _this.state.time - 1`
+  -  Se `tl` for igual a `0`, ele interrompe o intervalo
+  -  Por fim ele seta o estado de time com `.setState({time: tl})`
+- No fim da função ele retorna colocando o estado de `time` e `int`
+
+Os comandos [setInterval][0] e [clearInterval][1] não são do React, e podem
+ser vistos na documentação oficial da [Mozilla][3]
+
+[0]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval
+[1]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval
+[3]:https://developer.mozilla.org/en-US/docs/Web/Reference/API
