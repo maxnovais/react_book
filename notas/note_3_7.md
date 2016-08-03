@@ -41,9 +41,9 @@ var Timer = React.createClass({
 ```
 
 Esse objeto fará duas coisas, quando o contador chegar a 0, ele vai tocar uma
-mídia definida do objeto pai e quando o valor for 0 ou null ele não irá exibir
-o contador. Nesse momento também vamos criar um objeto `Button` e deixar o tempo
-como uma propriedade, isso fará com que o botão seja reusável.
+mídia definida do objeto pai e quando o valor for `0` ou `null` ele não irá
+exibir o contador. Nesse momento também vamos criar um objeto `Button` e deixar
+o tempo como uma propriedade, isso fará com que o botão seja reusável.
 
 ```jsx
 var Button = React.createClass({
@@ -60,10 +60,10 @@ var Button = React.createClass({
 })
 ```
 
-**Observe** que coloquei o objeto integralmente, para explicar melhor, na
-renderização solicitamos a `this.props.time`, ou seja, a chamada do objeto terá
-de incluir essa propriedade junto ao handler de `startTimer`. Por fim, vamos ao
-último objeto.
+**Observe** que coloquei o objeto integralmente, para explicar melhor como
+funciona, na renderização solicitamos a `this.props.time`, ou seja, a chamada do
+objeto terá de incluir essa propriedade junto ao handler de `startTimer`. Por
+fim, vamos ao último objeto, o `TimerWrapper`.
 
 ```jsx
 var TimerWrapper = React.createClass({
@@ -102,7 +102,7 @@ var TimerWrapper = React.createClass({
 ```
 
 Aqui fica toda a lógica do processo, inicializamos o objeto com as propriedades
-de estado `time` e `int` iguais a nulo e definimos um manipulador chamado
+de estado `time` e `int` iguais a nulo e definimos um handler chamado
 `startTimer`, esse recebendo um valor de `time`.
 
 -   Primeira coisa que ele vai fazer é limpar o intervalo do estado de `int` no
@@ -118,6 +118,71 @@ novamente o botão, ele não deve continuar o estado anterior.
 
 Os comandos [setInterval][0] e [clearInterval][1] não são do React, e podem
 ser vistos na documentação oficial da [Mozilla][3]
+
+Segue abaixo o JSX completo:
+
+```jsx
+var Timer = React.createClass({
+  render: function() {
+    if (this.props.time == 0) {
+      document.getElementById('end-of-time').play()
+    }
+    if (this.props.time == null || this.props.time == 0) return <div/>
+    return <h1>Time left: {this.props.time}</h1>
+  }
+});
+
+var TimerWrapper = React.createClass({
+  getInitialState: function() {
+    return {time: null, int: null}
+  },
+  startTimer: function(time) {
+    clearInterval(this.state.int)
+    var _this = this
+    var int = setInterval(function() {
+      console.log('2: Inside of setInterval')
+      var tl = _this.state.time - 1
+      if (tl == 0) clearInterval(int)
+      _this.setState({time: tl})
+    }, 1000)
+    console.log('1: After setInterval')
+    return this.setState({time: time, int: int})
+  },
+
+  render: function(){
+    return (
+      <div className="row-fluid">
+        <h2>Timer</h2>
+        <div className="btn-group" role="group">
+          <Button time="5" startTimer={this.startTimer}/>
+          <Button time="10" startTimer={this.startTimer}/>
+          <Button time="15" startTimer={this.startTimer}/>
+        </div>
+        <Timer time={this.state.time}/>
+        <audio id="end-of-time" src="sound.wav" preload="auto"></audio>
+      </div>
+    )
+  }
+
+})
+
+var Button = React.createClass({
+  startTimer: function() {
+    return this.props.startTimer(this.props.time)
+  },
+  render: function() {
+    return(
+      <button type="button" className="btn-default btn" onClick={this.startTimer}>
+        {this.props.time} seconds
+      </button>
+    )
+  }
+})
+
+ReactDOM.render(
+  <TimerWrapper/>, document.getElementById('timer-app')
+)
+```
 
 [0]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval
 [1]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval
