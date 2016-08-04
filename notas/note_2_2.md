@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_2_1.md) | [Próxima Nota](note_2_3.md)
-
 # Condicionais
 
 As condicionais seguem os mesmos padrões do Javascript comum:
@@ -13,17 +11,24 @@ As condicionais seguem os mesmos padrões do Javascript comum:
 Vamos fazer com que condicionalmente mostre se o usuário precisa ou não logar ou
 deslogar, podemos fazê-lo em três formas, assim como abaixo:
 
-```jsx
-// Primeiro formato
-<div>Status: {window.isLoggedIn ? 'Logged in' : 'Logged out'}</div>
+## Primeiro formato
 
-// Segundo formato
+```jsx
+<div>Status: {window.isLoggedIn ? 'Logged in' : 'Logged out'}</div>
+```
+
+## Segundo formato
+
+```jsx
 getLoginLogout: function() {
   if (window.isLoggedIn) return <a href='/logout'>Log out</a>
   else return <a href='/login'>Log in</a>
 }
+```
 
-// Terceiro formato
+## Terceiro formato
+
+```jsx
 loginLogoutLink
 if (window.isLoggedIn) {
   loginLogoutLink = <a href="/logout">Log out</a>
@@ -108,3 +113,7 @@ var Link = React.createClass({
 
 ReactDOM.render(<Menu />, document.getElementById('menu'))
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_2_1.md) | [Próxima](note_2_3.md)

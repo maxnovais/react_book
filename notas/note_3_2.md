@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_3_1.md) | [Próxima Nota](note_3_3.md)
-
 # Estados
 
 O React trabalha bastante com estado de objetos, para exemplificar, vamos fazer
@@ -115,3 +113,7 @@ ReactDOM.render(
   document.getElementById('content')
 )
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_3_1.md) | [Próxima](note_3_3.md)

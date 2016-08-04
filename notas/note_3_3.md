@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_3_2.md) | [Próxima Nota](note_3_4)
-
 # Métodos
 
 Simples nota para manter a ordem, mas é um pouco mais do que está descriminado
@@ -73,3 +71,7 @@ ReactDOM.render(
   document.getElementById('content')
 );
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_3_2.md) | [Próxima](note_3_4)

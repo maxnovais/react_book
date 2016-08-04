@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_3_4.md) | [Próxima Nota](note_3_6.md)
-
 # Manipuladores
 
 Falando mais sobre propriedades, elas são imutáveis, ou seja, não sofrem
@@ -116,3 +114,7 @@ ReactDOM.render(
   document.getElementById('content')
 );
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_3_4.md) | [Próxima](note_3_6.md)

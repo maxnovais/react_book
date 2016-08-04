@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_3_6.md) | [Próxima Nota]()
-
 # Projeto Timer
 
 Com o que vimos até agora, já dá pra criar um pequeno projeto, esse é bastante
@@ -111,10 +109,10 @@ novamente o botão, ele não deve continuar o estado anterior, em seguida salvam
 o contexto do objeto `var _this = this` e definimos `int` uma função
 `setInterval` que será executada em 1000 ms. Dentro do `setInterval`:
 
--   A variável `tl` significa *time left*
--   Subtraí o tempo com `var tl = _this.state.time - 1`
--   Se `tl` for igual a `0`, ele interrompe o intervalo
--   Por fim ele seta o estado de time com `.setState({time: tl})`
+    - A variável `tl` significa *time left*
+    - Subtraí o tempo com `var tl = _this.state.time - 1`
+    - Se `tl` for igual a `0`, ele interrompe o intervalo
+    - Por fim ele seta o estado de time com `.setState({time: tl})`
 
 No fim da função ele retorna colocando o estado de `time` e `int` criando o
 loop finito.
@@ -186,6 +184,10 @@ ReactDOM.render(
   <TimerWrapper/>, document.getElementById('timer-app')
 )
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_3_6.md) | [Próxima Nota](.)
 
 [0]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval
 [1]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval

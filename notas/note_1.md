@@ -1,5 +1,3 @@
-[Home](../README.md) | Nota Anterior | [Próxima Nota](note_2_1.md)
-
 # 1 - Hello Word
 
 Bom, o react pode ser conseguido de diversas maneiras, tanto pelo NPM, quanto
@@ -89,6 +87,10 @@ ReactDOM.render(
 
 Existe também uma quantidade vasta de tags HTML que o react suporta, e podem ser
  vistas no [site oficial][1].
+
+- - -
+
+[Home](../README.md) | Anterior | [Próxima](note_2_1.md)
 
 [0]:https://cdnjs.com/libraries/react
 [1]:https://facebook.github.io/react/docs/tags-and-attributes.html

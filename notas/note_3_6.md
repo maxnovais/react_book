@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_3_5.md) | [Próxima Nota](note_3_7.md)
-
 # Parent
 
 Bom, se você não ficou convencido em usar a lógica fora do componente, vou
@@ -137,3 +135,7 @@ ReactDOM.render(
   document.getElementById('content')
 );
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_3_5.md) | [Próxima](note_3_7.md)

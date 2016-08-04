@@ -1,14 +1,12 @@
-[Home](../README.md) | [Nota Anterior](note_1.md) | [Próxima Nota](note_2_2.md)
-
 # 2 - JSX
 
 JSX é uma extensão do Javascript para ser mais legível e compilado via
 transformadores. O JSX não é um dos requerimentos do React, mas devido a sua
 facilidade de compreensão, vamos utilizar esse formato nos tutoriais.
 
--   O código fica mais legível, compacto
--   Desenvolvedores novatos ou designer podem mexer com mais facilidade
--   Não tem uma curva de aprendizado alta.
+    - O código fica mais legível, compacto
+    - Desenvolvedores novatos ou designer podem mexer com mais facilidade
+    - Não tem uma curva de aprendizado alta.
 
 Há um fato relevante aqui, o JSX é transformado em JS comum através de dois
 meios, um deles é compilar localmente o JSX através do [Babel via Node][0]
@@ -31,9 +29,9 @@ não criaremos mais os elementos via `createElement()`, ao invés disso, criarem
 através de `<>`, assim, o código ficará mais legível, como podemos ver nas
 diferenças abaixo.
 
-### Javascript
+    - Javascript
+
 ```javascript
-// JS
 return React.createElement('div',
   null,
   menus.map(function(v,i){
@@ -45,7 +43,8 @@ return React.createElement('div',
 )
 ```
 
-### JSX
+    - JSX
+
 ```jsx
 return (
   <div>
@@ -59,9 +58,9 @@ return (
 Eles criam exatamente os mesmos objetos, de maneira diferente. A mesma coisa
 ocorre na renderização dos links:
 
-### Javascript
+    - Javascript
+
 ```javascript
-// JS
 return React.createElement('div',
   null,
   React.createElement('a', {href: url}, this.props.label),
@@ -69,7 +68,8 @@ return React.createElement('div',
 )
 ```
 
-### JSX
+- JSX
+
 ```jsx
 return (
   <div>
@@ -176,6 +176,10 @@ menu e retornamos o objeto com o método de array `.map()` com uma função que
 retorna um `div` com a chamada do objeto `link` passando o `label`, ou seja, o
 método `.map()` irá passar em todos os itens do array e criará o menu
 dinamicamente.
+
+- - -
+
+[Home](../README.md) | [Anterior](note_1.md) | [Próxima](note_2_2.md)
 
 [0]:https://www.npmjs.com/package/babel
 [1]:https://cdnjs.com/libraries/babel-core/

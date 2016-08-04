@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_2_4.md) | [Próxima Nota](note_3_2.md)
-
 # Propriedades
 
 Como falamos no [Projeto Tooltip](note_2_3.md), aqui vamos falar um pouco das
@@ -137,3 +135,7 @@ ReactDOM.render(
   document.getElementById('content')
 );
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_2_4.md) | [Próxima](note_3_2.md)

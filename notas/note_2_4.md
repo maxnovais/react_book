@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_2_3.md) | [Próxima Nota](note_3_1.md)
-
 # Compilando JSX
 
 Bom, falamos bastante de Javascript, e mostramos também algumas coisas em JSX
@@ -147,6 +145,10 @@ ReactDOM.render(React.createElement(
   '. There are many other frameworks to consider, but I had to draw the line somewhere.'
 ), document.getElementById('tooltip'));
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_2_3.md) | [Próxima](note_3_1.md)
 
 [0]:https://babeljs.io/
 [1]:https://nodejs.org/en/

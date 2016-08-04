@@ -1,5 +1,3 @@
-[Home](../README.md) | [Nota Anterior](note_2_2.md) | [Próxima Nota](note_2_4.md)
-
 # Projeto Tooltip
 
 Nessa anotação, vamos fazer um pequeno projeto de front-end usando algumas
@@ -171,6 +169,10 @@ ReactDOM.render(<div>
   </div>,
   document.getElementById('tooltip'))
 ```
+
+- - -
+
+[Home](../README.md) | [Anterior](note_2_2.md) | [Próxima](note_2_4.md)
 
 [0]:https://bootswatch.com/
 [1]:https://bootswatch.com/flatly/
