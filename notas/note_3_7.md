@@ -187,7 +187,7 @@ ReactDOM.render(
 
 - - -
 
-[Home](../README.md) | [Anterior](note_3_6.md) | [Próxima Nota](.)
+[Home](../README.md) | [Anterior](note_3_6.md) | [Próxima Nota](note_4_1.md)
 
 [0]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval
 [1]:https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval

@@ -68,7 +68,7 @@ return React.createElement('div',
 )
 ```
 
-- JSX
+    - JSX
 
 ```jsx
 return (
