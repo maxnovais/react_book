@@ -109,10 +109,10 @@ novamente o botão, ele não deve continuar o estado anterior, em seguida salvam
 o contexto do objeto `var _this = this` e definimos `int` uma função
 `setInterval` que será executada em 1000 ms. Dentro do `setInterval`:
 
-    - A variável `tl` significa *time left*
-    - Subtraí o tempo com `var tl = _this.state.time - 1`
-    - Se `tl` for igual a `0`, ele interrompe o intervalo
-    - Por fim ele seta o estado de time com `.setState({time: tl})`
+-   A variável `tl` significa *time left*
+-   Subtraí o tempo com `var tl = _this.state.time - 1`
+-   Se `tl` for igual a `0`, ele interrompe o intervalo
+-   Por fim ele seta o estado de time com `.setState({time: tl})`
 
 No fim da função ele retorna colocando o estado de `time` e `int` criando o
 loop finito.

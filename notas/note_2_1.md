@@ -4,9 +4,9 @@ JSX é uma extensão do Javascript para ser mais legível e compilado via
 transformadores. O JSX não é um dos requerimentos do React, mas devido a sua
 facilidade de compreensão, vamos utilizar esse formato nos tutoriais.
 
-    - O código fica mais legível, compacto
-    - Desenvolvedores novatos ou designer podem mexer com mais facilidade
-    - Não tem uma curva de aprendizado alta.
+-   O código fica mais legível, compacto
+-   Desenvolvedores novatos ou designer podem mexer com mais facilidade
+-   Não tem uma curva de aprendizado alta.
 
 Há um fato relevante aqui, o JSX é transformado em JS comum através de dois
 meios, um deles é compilar localmente o JSX através do [Babel via Node][0]
@@ -29,7 +29,7 @@ não criaremos mais os elementos via `createElement()`, ao invés disso, criarem
 através de `<>`, assim, o código ficará mais legível, como podemos ver nas
 diferenças abaixo.
 
-    - Javascript
+-   Javascript
 
 ```javascript
 return React.createElement('div',
@@ -43,7 +43,7 @@ return React.createElement('div',
 )
 ```
 
-    - JSX
+-   JSX
 
 ```jsx
 return (
@@ -58,7 +58,7 @@ return (
 Eles criam exatamente os mesmos objetos, de maneira diferente. A mesma coisa
 ocorre na renderização dos links:
 
-    - Javascript
+-   Javascript
 
 ```javascript
 return React.createElement('div',
@@ -68,7 +68,7 @@ return React.createElement('div',
 )
 ```
 
-    - JSX
+-   JSX
 
 ```jsx
 return (

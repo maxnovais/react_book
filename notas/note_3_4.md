@@ -3,24 +3,24 @@
 O React suporta uma série de eventos, por exemplo, a lista de eventos de mouse
 até a versão 0.14.:
 
-    - onClick
-    - onContextMenu
-    - onDoubleClick
-    - onDrag
-    - onDragEnd
-    - onDragEnter
-    - onDragExit
-    - onDragLeave
-    - onDragOver
-    - onDragStart
-    - onDrop
-    - onMouseDown
-    - onMouseEnter
-    - onMouseLeave
-    - onMouseMove
-    - onMouseOut
-    - onMouseOver
-    - onMouseUp
+-   onClick
+-   onContextMenu
+-   onDoubleClick
+-   onDrag
+-   onDragEnd
+-   onDragEnter
+-   onDragExit
+-   onDragLeave
+-   onDragOver
+-   onDragStart
+-   onDrop
+-   onMouseDown
+-   onMouseEnter
+-   onMouseLeave
+-   onMouseMove
+-   onMouseOut
+-   onMouseOver
+-   onMouseUp
 
 Uma coisa interessante do React, é que ele é declarativo, não imperativo, isso
 quer dizer que não precisamos anexar a função no evento, e sim declarar e
