@@ -58,6 +58,7 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 
 -   [Nota 4.1 - Propriedades](notas/note_4_1.md)
 -   [Nota 4.2 - Estados](notas/note_4_2.md)
+-   [Nota 4.3 - Tipos e Validação](notas/note_4_3.md)
 
 [0]:https://www.manning.com/books/react-quickly
 [1]:https://facebook.github.io/react/docs/getting-started.html

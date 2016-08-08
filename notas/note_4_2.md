@@ -96,4 +96,4 @@ ReactDOM.render(
 
 - - -
 
-[Home](../README.md) | [Anterior](note_4_1.md) | [Próxima Nota](note_4_2.md)
+[Home](../README.md) | [Anterior](note_4_1.md) | [Próxima Nota](note_4_3.md)
