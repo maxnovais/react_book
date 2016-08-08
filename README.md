@@ -54,5 +54,10 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 3.6 - Parent](notas/note_3_6.md)
 -   [Nota 3.7 - Projeto Timer](notas/note_3_7.md)
 
+### Capitulo 4
+
+-   [Nota 4.1 - Propriedades](notas/note_4_1.md)
+-   [Nota 4.2 - Estados](notas/note_4_2.md)
+
 [0]:https://www.manning.com/books/react-quickly
 [1]:https://facebook.github.io/react/docs/getting-started.html
