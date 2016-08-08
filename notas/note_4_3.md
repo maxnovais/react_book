@@ -165,7 +165,8 @@ contar com essas abaixo:
 -   React.PropTypes.array
 -   React.PropTypes.func
 
-E por fim, o JSX completo:
+Mais informações sobre isso, pode ser encontrado na [documentação oficial][0].
+Segue o JSX completo:
 
 ```jsx
 var Button  = React.createClass({
@@ -213,3 +214,5 @@ ReactDOM.render(
 ---
 
 [Home](../README.md) | [Anterior](note_4_2.md) | [Próxima Nota](note_4_3.md)
+
+[0]:https://facebook.github.io/react/docs/reusable-components.html#prop-validation
