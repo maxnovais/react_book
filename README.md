@@ -60,6 +60,8 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 4.2 - Estados](notas/note_4_2.md)
 -   [Nota 4.3 - Tipos e Validação](notas/note_4_3.md)
 -   [Nota 4.4 - Mixin](notas/note_4_4.md)
+-   [Nota 4.5 - Children](notas/note_4_5.md)
+-   [Nota 4.6 - Projeto Jokenpo](notas/note_4_6.md)
 
 [0]:https://www.manning.com/books/react-quickly
 [1]:https://facebook.github.io/react/docs/getting-started.html
