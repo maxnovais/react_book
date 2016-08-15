@@ -287,7 +287,7 @@ ReactDOM.render(
 
 ---
 
-[Home](../README.md) | [Anterior](note_4_5.md) | [Próxima Nota](note_4_6.md)
+[Home](../README.md) | [Anterior](note_4_5.md) | [Próxima Nota](note_5_1.md)
 
 [0]:https://www.manning.com/books/react-quickly
 [1]:note_3_2.md

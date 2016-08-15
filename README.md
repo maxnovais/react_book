@@ -63,5 +63,10 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 4.5 - Children](notas/note_4_5.md)
 -   [Nota 4.6 - Projeto Jokenpo](notas/note_4_6.md)
 
+### Capitulo 5
+
+-   [Nota 5.1 - Formulários no React](notas/note_5_1.md)
+-   [Nota 5.2 - Componentes não controlados](notas/note_5_2.md)
+
 [0]:https://www.manning.com/books/react-quickly
 [1]:https://facebook.github.io/react/docs/getting-started.html
