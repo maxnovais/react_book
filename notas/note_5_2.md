@@ -10,8 +10,19 @@ render: function() {
 }
 ```
 
-Então, vamos fazer algo para capturar esse valor e mostrá-lo na visualização.
-Primeiramente, iniciamos com o nosso html padrão:
+Em alguns casos, você pode usar uma propriedade chamada `defaultValue`, conforme
+abaixo, isso determinará o valor inicial do input, mas não sua proprieda
+`value`.
+
+```jsx
+render: function() {
+  return <input type="text" defaultValue="JSX" />
+}
+```
+
+Se você usar algo diferente desse, o valor não irá mudar quando o input for
+mostrado. Nesse exemplo vamos fazer algo para capturar o valor e mostrá-lo na
+visualização. Primeiramente, iniciamos com o nosso html padrão:
 
 ```html
 <!DOCTYPE html>
