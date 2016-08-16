@@ -69,5 +69,10 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 -   [Nota 5.2 - Componentes não controlados](notas/note_5_2.md)
 -   [Nota 5.3 - Componentes controlados](notas/note_5_3.md)
 
+### Capitulo 6
+
+-   [Nota 5.1 - Ciclo de vida de componentes](notas/note_5_1.md)
+
+
 [0]:https://www.manning.com/books/react-quickly
 [1]:https://facebook.github.io/react/docs/getting-started.html
