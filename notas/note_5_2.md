@@ -1,8 +1,7 @@
 # Componentes não controlados
 
 Um componente não controlado no React significa que a propriedade `value` não é
-atribuída através da biblioteca. Por exemplo, o `input` abaixo é um desses
-componentes, pois o React não consegue atribuir o `value`.
+atribuída através da biblioteca.
 
 ```jsx
 render: function() {
@@ -11,7 +10,7 @@ render: function() {
 ```
 
 Em alguns casos, você pode usar uma propriedade chamada `defaultValue`, conforme
-abaixo, isso determinará o valor inicial do input, mas não sua proprieda
+abaixo, isso determinará o valor inicial do input, mas não sua propriedade
 `value`.
 
 ```jsx
