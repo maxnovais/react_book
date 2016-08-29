@@ -71,7 +71,7 @@ abaixo, só precisa ter um Node / Npm instalado na máquina e acesso de terminal
 
 ### Capitulo 6
 
--   [Nota 5.1 - Ciclo de vida de componentes](notas/note_5_1.md)
+-   [Nota 6.1 - Ciclo de vida de componentes](notas/note_6_1.md)
 
 
 [0]:https://www.manning.com/books/react-quickly

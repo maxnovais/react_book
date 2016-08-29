@@ -1,4 +1,4 @@
-var Content = React.createClass({
+givar Content = React.createClass({
   getInitialState: function(){
     return {value: ''}
   },

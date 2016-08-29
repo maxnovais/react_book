@@ -20,7 +20,7 @@ Existem outros eventos similares, incluíndo:
 Esses eventos são distribuídos em três categorias: **Mounting**, **Updating** e
 **Unmounting**.
 
-##Mounting
+## Mounting
 
 No evento de montagem do componente dois eventos são chamados
 `componentWillMount` e `componentDidMount`:
@@ -34,7 +34,7 @@ executado somente pelo browser, nesse momento você consegue referenciar, por
 exemplo, os objetos filhos - Só observe que ele será executado antes da criação
 dos objetos abaixo dele.
 
-##Updating
+## Updating
 
 Esse se trata de eventos de atualização, são no total quatro:
 `componentWillReceiveProps`, `shouldComponentUpdate`, `componentWillUpdate` e
@@ -57,15 +57,37 @@ componentWillReceiveProps: function(newProps) {
 
 Outro detalhe, é que esse evento não inicializa uma renderização extra.
 
-**shouldComponentUpdate**: 
+**shouldComponentUpdate**: Esse evento é chamado antes da renderização, esse
+evento serve para atribuir seus estados e propriedades e retorna um valor
+booleano que determina se o componente deve atualizar ou não. O exemplo abaixo
+sugere o retorno `true` a atualização quando a propriedade `ìsVisible` for
+diferente do estado `opactity`.
 
+```jsx
+shouldComponentUpdate: function(newProps, newState) {
+  return this.state.opacity !== + newProps.isVisible
+}
+```
 
-**componentWillUpdate**:
+***Nota*** que usamos `+` antes do `newProps.isVisible` para alterar seu tipo
+a um valor númerico, da mesma forma que é armazenado no estado.
 
-**componentDidUpdate**:
+**componentWillUpdate**: Esse evento é chamado após a renderizadação e antes de
+receber as propriedades e estados, evite usar comandos como `this.setState()`
+aqui.
+
+**componentDidUpdate**: Esse é chamado após o componente ter a atualização
+refletida no DOM, e esse método também não chama a renderização inicial.
+
+## Unmounting
+
+Esse se trata de eventos de desmontagem, usando apenas o evento
+**componentWillUnmount**, esse é chamado quando o componente é demonstado do
+DOM. Esse pode ser usado para limpeza de objetos, por exemplo limpar timers,
+dados desnecessários, etc.
 
 ---
 
-[Home](../README.md) | [Anterior](note_5_2.md) | [Próxima Nota](note_5_3.md)
+[Home](../README.md) | [Anterior](note_5_3.md) | [Próxima Nota](note_6_1.md)
 
 [0]:note_4_4.md
